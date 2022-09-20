@@ -1,0 +1,34 @@
+.formContainer {
+    background-color: lightblue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .formWrapper {
+        background-color: aliceblue;
+        padding: 20px 60px;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+        .logo {
+            color: lightcoral;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .title {
+            color: lightcoral;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+}
