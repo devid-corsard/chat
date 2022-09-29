@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import Add from '../img/addImg.png';
 import { auth } from '../firebase';
 
 const Login = () => {
@@ -25,11 +24,14 @@ const Login = () => {
         <span className="logo">Devid Chat</span>
         <span className="title">Login</span>
         <form onSubmit={handleSubmit}>
-          <input type="email" placeholder="email" />
-          <input type="password" placeholder="password" />
+          <input type="email" placeholder="email (test: test@gmail.com)" />
+          <input type="password" placeholder="password (test: 123456)" />
           <button>Sign In</button>
           {err && <span>Something went wrong...</span>}
         </form>
+        <span style={{ fontSize: '12px', color: 'lightgray' }}>
+          test: test@gmail.com - 123456
+        </span>
         <p>
           You don't have an account? <Link to="/register">Register</Link>
         </p>

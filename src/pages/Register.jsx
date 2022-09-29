@@ -18,14 +18,12 @@ const Register = () => {
 
     try {
       const res = await createUserWithEmailAndPassword(auth, email, password);
-      console.log(res.user);
 
       const storageRef = ref(storage, displayName);
 
       const uploadTask = uploadBytesResumable(storageRef, file);
 
       uploadTask.on(
-        //'state_changed',
         (error) => {
           setErr(true);
         },
@@ -43,7 +41,7 @@ const Register = () => {
               photoURL: downloadURL,
             });
 
-            await setDoc(doc(db, 'usersChat', res.user.uid), {});
+            await setDoc(doc(db, 'userChats', res.user.uid), {});
             navigate('/');
           });
         }
