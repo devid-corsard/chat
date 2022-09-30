@@ -1,7 +1,8 @@
 {
-  "name": "booking",
+  "name": "devid-chat",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://devid-corsard.github.io/chat-build/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",

@@ -10,6 +10,7 @@
 
 # production
 /build
+/build_git
 firabase.config.js
 
 # misc
