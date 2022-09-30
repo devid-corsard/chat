@@ -1,4 +1,3 @@
-import { updateCurrentUser } from 'firebase/auth';
 import React, { useContext, useEffect, useRef } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import { ChatContext } from '../context/ChatContext';

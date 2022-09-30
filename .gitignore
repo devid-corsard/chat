@@ -10,6 +10,7 @@
 
 # production
 /build
+firabase.config.js
 
 # misc
 .DS_Store
